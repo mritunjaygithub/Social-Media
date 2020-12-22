@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Social Media</title>
+	<!-- Online CDN CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet"   href="./css/style.css">
+	</style>
+</head>
+
+<body>
+	    <!-- Navigation bar -->
+		<nav class="navbar navbar-default navbar-fixed-top"	>
+			<div class="container">
+				
+				<div class="navbar-header">
+					<!-- Brand -->
+					<a href="index.html" class="navbar-brand"> <img src="./images/mjr.png" class="img-responsive"> </a>
+					<!-- Hamberger	 -->
+					<button type="button" class="navbar-toggle collapsed" data-target="#navbar-menu" data-toggle="collapse" area-hidden="false">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Tweet button -->
+                    <button id="tweet" class="btn btn-default pull-right hidden-lg hidden-md hidden-sm">
+                        <span class="glyphicon glyphicon-pencil "></span>
+                        Tweet
+                    </button>
+				</div>
+				<!-- Menu item -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					 <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home" area-hidden="true"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="badge">5</span>
+                                <span class="glyphicon glyphicon-bell" area-hidden="true"></span>
+                                Notification
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-envelope" area-hidden="true"></span>
+                                Messages
+                            </a>
+                        </li>
+                        <li>
+								<a href="#">
+									<span id="group" class="glyphicon glyphicon-user" area-hidden="true"></span>
+									<span class="glyphicon glyphicon-user" area-hidden="true"></span>
+									Groups
+								</a>
+						</li>
+						<li class="visible-xs-inline">
+								<a href="#">
+									<span class="glyphicon glyphicon-user" area-hidden="true"></span>
+									Profile
+								</a>
+						</li>
+						<li class="visible-xs-inline">
+								<a href="#">
+									<span class="glyphicon glyphicon-off" area-hidden="true"></span>
+									Logout
+								</a>
+						</li>
+                    </ul>
+                    <!-- Tweet button -->
+                    <button id="tweet" class="btn btn-default pull-right hidden-xs">
+                        <span class="glyphicon glyphicon-pencil "></span>
+                        Tweet
+                    </button>
+                    <!-- Dropdown menu -->
+					   <div id="nav-options" class="btn-group pull-right hidden-xs">
+					   	<button type="button" class="btn btn-default dropdown-toggle thumbnail" data-toggle="dropdown">
+					   		<img src="./images/krishna.jpg">
+					   </button>
+					   <!-- drop Menu -->
+					   <ul class="dropdown-menu">
+					   	<li> <a href="#">Profile</a></li>
+					   	<li> <a href="setting.html">Setting</a></li>
+					   	<li role="separator" class="divider"></li>
+					   	<li> <a href="#">Logout</a></li>
+					   </ul>
+					   	
+					   </div>
+					   <!-- Dropdown menu -->
+					<!-- Search Form -->
+						<form id="search" class="hidden-sm hidden-xs">
+							<div class="input-group">
+							<input class="form-control " type="text" name="srch" placeholder="Search">
+							<a href="srch"><span class=" glyphicon glyphicon-search " area-hidden="true"></span></a>
+							
+						</div>
+						</form>
+						<!-- Search Form -->
+				</div>
+				<!-- Menu item -->
+			</div>	
+		</nav>
+		<!-- Navigation bar -->
+
+		<!-- Card -->
+		<div class="container">
+
+			<!-- row -->
+			<div class="row">
+				<!-- left 3-grid column -->
+				<div id="profile-resume" class="col-md-3 hidden-sm hidden-xs">
+					<div class="card">
+							<img src="./images/car.jpg" class="img-responsive card-img-top" width="100%">
+							<div class="card-block">
+								<img src="./images/krishna.jpg" class="img-responsive thumbnail">
+								<h4 class="card-title">KumarJay <small>@kumarjay</small></h4>
+								<p class="card-text">Your only limit is your mind.</p>
+								 <ul class="list-unstyled list-inline">
+								 	<li id="card-tweets">
+								 			<a href="#">
+								 				<span class="profile-status">
+								 					Tweets
+								 				</span>
+								 				<span  class="profile-value">
+								 					99k  
+								 				</span>
+								 			</a>
+								 	</li>
+								 	<li id="card-following">
+								 			<a href="#">
+								 				<span class="profile-status">
+								 					Following
+								 				</span>
+								 				<span class="profile-value">
+								 					5k
+								 				</span>
+								 				 
+								 			</a>
+								 	</li>
+								 	<li id="card-followers">
+								 			<a href="#">
+								 				<span class="profile-status">
+								 					Followers
+								 				</span>
+								 				<span  class="profile-value">
+								 					160k  
+								 				</span>
+								 			</a>
+								 	</li>
+								 </ul>
+							</div>
+					</div>	
+					<!-- profile resume -->
+
+					
+
+                    <!-- Settings-card -->
+                    <div class="card" id="profile-settings">
+                        <ul class="nav nav-pills nav-stacked ">
+                            <li class="active">
+                                <!--  -->
+                                <a href="#">Account
+                                    <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="#">Security
+                                    <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Notifications
+                                    <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Design
+                                    <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Setting-card -->
+				</div>	
+			    <!-- left 3-grid column -->
+				
+		<!-- ========================================== -->
+
+				
+                <!-- Middle 6-grid column -->
+                <div id="main" class="col-sm-12 col-md-6">
+                    <ul id="account-tabs" class="nav nav-tabs nav-justified">
+						<li class="active" >
+                            <a href="#account-user"  data-toggle="tab">User Info</a>
+                        </li>
+                        <li>
+                            <a href="#account-language" data-toggle="tab">Language</a>
+                        </li>
+                        <li>
+                            <a href="#account-mobile" data-toggle="tab">Mobile</a>
+                        </li>
+					</ul>
+					
+					<!-- user-info -->
+					<div class="tab-content card">
+						<div class="tab-pane active " id="account-user">
+
+							<form action="" class="form-horizontal ">
+
+								<div class="form-group">
+									<label class="col-sm-3 control-label">Name</label>
+									<div class="col-sm-9">
+										
+											<input type="text" class="form-control" value="Kumar Jay">
+
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">Username</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<div class="input-group-addon">@</div>
+											<input type="text" class="form-control" value="kumarjay">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">Email</label>
+									<div class="col-sm-9">
+										<input type="email" class="form-control" value="kumarjay@002gmail.com">
+									</div>
+								</div>
+								<div class="form-group">
+									 
+									<div class="col-sm-offset-3 col-sm-9">
+										 <button type="submit" class="btn btn-primary">Save Changes</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="account-language">
+							Language tab pane
+						</div>
+						<div class="tab-pane" id="account-mobile">
+							Mobile  tab pane
+						</div>
+					</div>
+
+                </div>
+				 
+				<!-- Middle 6-grid column -->
+
+		<!-- ========================================== -->
+
+				<!-- Right 3-grid column -->
+				 <div id="right-content" class="col-md-3 hidden-sm hidden-xs">
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-info">Kumar Stats</li>
+						<li class="list-group-item">
+							Number of day rides
+							<span class="label label-danger">3</span>
+						</li>
+						<li class="list-group-item">
+						Coptirede nice
+						<span class="label label-default">35</span>
+						</li>
+						<li class="list-group-item">
+							slkfjlasf
+							<span class="label label-success">5</span>
+						</li>
+						<li class="list-group-item">
+						sjnvvjaelfkk
+						<span class="label label-info">
+							<span class=" glyphicon glyphicon-star "></span>
+						</span>
+						
+						</li>
+
+					</ul>
+				 </div>
+				<!-- Right 3-grid column -->
+
+		<!-- ========================================== -->
+						
+			</div>
+			<!-- row -->
+		</div>
+		<!-- card -->
+
+
+
+		
+		
+
+
+						 
+
+
+
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         
+
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
